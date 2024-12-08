@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: #4B4242;
+}
+
+.productMenu-container{
+    width: 100%;
+    padding: 5% 1%;   
+    height: fit-content;
+  
+}
+
+.productMenuContent-container{
+    display: flex;
+}
+.products-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23% ;
+    grid-template-rows: min-content;
+    justify-content: center;    
+    gap: 2%;
+}
+
+.product-item{
+    width: fit-content;
+    padding: 10%;
+    text-align: center;
+    justify-content: center;
+}
+.product-item:hover{
+    cursor: pointer;
+    border: 2px solid #750901;
+   
+}
+.image-container{
+    text-align: center;
+}
+.productName{
+    font-weight: bold;
+    font-size: 18px;
+}
+.productPrice{
+    line-height: 0;
+    font-weight: bold;
+}
+
+.productImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.headCategory{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+@media screen  and (max-width:1000px){
+    .headCategory{
+        font-weight: bold;
+        font-size: 1rem;
+    }
+  
+}
+
+@media screen and (max-width:1000px) {
+    
+    .products-container{
+        grid-template-columns: 30% 30% 30%;
+    }
+    .productImage{
+        width: 150px;
+        height: 150px;
+    }
+    .productMenu-container{
+        height: fit-content;
+        padding-bottom: 40%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    label {
+        font-size: 0.8rem;
+    }
+    .category-container{
+        width: 30%;
+    }
+    .productMenu-container{
+        height: fit-content;
+        padding-bottom: 40%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .category-container{
+        width: 30%;
+    }
+    .products-container{
+        grid-template-columns: 50% 50%;
+
+    }
+    .productImage{
+        width: 130px;
+        height: 130px;
+
+    }
+    .productMenu-container{
+        height: fit-content;
+        padding-bottom: 40%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .category-container{
+        width: 40%;
+        padding:0 5%;
+    }
+    .products-container{
+        width: 60%;
+        grid-template-columns: 80%;
+
+    }
+    .productMenu-container{
+        height: fit-content;
+        padding-bottom: 100%;
+    }
+    .productImage{
+        width: 130px;
+        height: 130px;
+    }
+}

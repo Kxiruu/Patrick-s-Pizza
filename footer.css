@@ -1,0 +1,238 @@
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    padding: 3rem 1rem 2rem;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    color: white;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .flist {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Social Media Styles */
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .social-media li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .social-media li a i {
+    width: 20px;
+    text-align: center;
+  }
+  
+  .social-media li a i {
+  
+    width: 20px;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  /* Large Screens (Desktops) */
+  @media screen and (max-width: 1200px) {
+    h1 {
+        padding-left: 5rem;
+    }
+  
+    .faq-container {
+        margin: 0.5rem 5rem;
+    }
+  }
+  
+  /* Medium Screens (Tablets) */
+  @media screen and (max-width: 768px) {
+    h1 {
+        padding-left: 2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+  
+    .container {
+        padding-top: 1.5rem;
+        justify-content: center;
+    }
+  
+    .faq-container {
+        margin: 0.5rem 2rem;
+    }
+  
+    .faq-question {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+  
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+  
+    .faq-answer.active {
+        padding: 15px;
+    }
+  
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #f2f2f2;
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+  
+    .nav-menu li a {
+        font-size: 0.85rem;
+    }
+  
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+  }
+  
+  /* Small Screens (Mobile) */
+  @media screen and (max-width: 480px) {
+    h1 {
+        padding-left: 1rem;
+        font-size: 1.75rem;
+        text-align: center;
+    }
+  
+    .container {
+        padding-top: 1rem;
+    }
+  
+    .faq-container {
+        margin: 0.5rem 1rem;
+        border-radius: 6px;
+    }
+  
+    .faq-question {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+  
+    .faq-answer {
+        font-size: 0.85rem;
+        padding: 0 12px;
+    }
+  
+    .faq-answer.active {
+        padding: 12px;
+        max-height: 300px;
+    }
+  }
+  
+  /* Extra Small Screens */
+  @media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+  
+    .faq-container {
+        margin: 0.5rem;
+    }
+  
+    .faq-question {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+  
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+  
+    .footer-section a {
+        font-size: 0.80rem;
+    }
+  
+    .social-media {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+  }
+  
+  @media (max-width: 120px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        text-align: center;
+    }
+  
+    h1 {
+        font-size: 0.70rem;
+    }
+  
+    .footer {
+        padding: 1rem 0.25rem;
+    }
+  
+    .footer-section h3 {
+        font-size: 0.5rem;
+    }
+  
+    .footer-section a {
+        font-size: 0.7rem;
+    }
+  
+    .social-media {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+  
+    .social-media li a i {
+        width: 16px;
+    }
+  }
+
+  
+  

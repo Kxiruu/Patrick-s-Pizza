@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2% 3%;
+    margin: 0.5% 0 2% 0;
+}
+
+.hero-card {
+    display: flex;
+    height: 75vh;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero-image {
+    width: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+    
+}
+
+.hero-content {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fdf6e9;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: px;
+    color: inherit;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Card Variants */
+.pumpkin-card .hero-content {
+    background-color: #f8e6d5ea;
+    color: #72430d;
+}
+
+.pumpkin-card .hero-content .cta-button {
+    border-radius: 5px;
+    border: 2px solid #72430d;
+    background-color: #F8E6D5;
+    color: #72430d;
+}
+.pumpkin-card .hero-content .cta-button:hover{
+    background-color: #72430d;
+    border: 2px solid #72430d;
+    color: #FBFCFE;
+}
+.popup-card .hero-content {
+    background-color: #CE463A;
+    color: #FBFCFE;
+}
+
+.popup-card .hero-content .cta-button {
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #CE463A;
+    color:#FBFCFE;
+}
+
+.popup-card .hero-content .cta-button:hover{
+    background-color: #FBFCFE;
+    color: #CE463A;;
+}
+
+.donut-card .hero-content {
+    background-color: #307825;
+    color: #F2DBD9;
+}
+
+.donut-card .hero-content .cta-button {
+    border-radius: 5px;
+    border: 2px solid #FBFCFE;
+    background-color: #307825;
+    color:#FBFCFE;
+}
+.donut-card .hero-content .cta-button:hover{
+    background-color: #FBFCFE;
+    color:  #307825;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+    align-self: flex-start;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
